@@ -1,0 +1,77 @@
+<head>
+	 <link rel="icon" type="image/png" href="http://bulma.io/favicons/favicon-32x32.png?v=201701041855" sizes="32x32">
+  	<link rel="icon" type="image/png" href="http://bulma.io/favicons/favicon-16x16.png?v=201701041855" sizes="16x16">
+</head>
+<nav class="nav">
+  <div class="nav-center">
+    <p class="nav-item">
+      <img src="http://bulma.io/images/bulma-logo.png">
+    </p>
+  </div>
+</nav>
+
+<!-- contenido -->
+<div class="section">
+<div class="columns">
+	<div class="column is-6">
+		<table class="table is-striped">
+			<thead>
+				<tr bgcolor="blue">
+					<td><p class="title is-5">ID</p></td>
+					<td><p class="title is-5">Nombre</p></td>
+					<td><p class="title is-5">Apellido</p></td>
+					<td><p class="title is-5">Edad</p></td>
+				</tr>
+			</thead>
+			<tbody>
+				<% @u.each do |i| %>
+				<tr>
+					<td bgcolor="orange"><%=i.id%></td>
+					<td bgcolor="orange"><%=i.nom%></td>
+					<td bgcolor="orange"><%=i.ap%></td>	
+					<td bgcolor="orange"><%=i.ed%></td>	
+				</tr>
+				<%end%>
+			</tbody>
+		</table>
+	</div>
+	<div class="column is-4 is-offset-1">
+		<div class="card">
+		  <div class="card-content">
+		    <p class="title">
+		      “Tarde o temprano la disciplina vencerá a la inteligencia.”
+		    </p>
+		    <p class="subtitle">
+		      Yokoi Kenji
+		    </p>
+		  </div>
+		  <footer class="card-footer">
+		    <p class="card-footer-item">
+		      <span>
+		        Esta frase equivale a:
+		      </span>
+		    </p>
+		    <p class="card-footer-item">
+		      <span>
+		        1 punto más :)
+		      </span>
+		    </p>
+		  </footer>
+		</div>
+	</div>
+</div>
+
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Bulma</strong> by:
+      </p>
+      <p>Kelly Atriano Rodriguéz</p>
+      <p>Rocio Bautista Pérez</p>
+      <p>Juan Carlos Hernández</p>
+    </div>
+  </div>
+</footer>
